@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv/config');
-
+const port = process.env.PORT || 3000;
 
 //Middlewares
 
@@ -31,4 +31,4 @@ console.log("connected to db")
 
 
 
-app.listen(3000, ()=> console.log("Server is Running"));
+app.listen(port, ()=> console.log("Server is Running"));
